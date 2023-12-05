@@ -43,7 +43,7 @@
  * 0 <= limit <= 109
  */
 
-class Solution {
+class LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit {
     longestSubarray(nums: number[], limit: number): number {
         const maxDeque: number[] = [];  // to store the maximum values in the current window
         const minDeque: number[] = [];  // to store the minimum values in the current window
@@ -84,8 +84,8 @@ class Solution {
 }
 
 // Test case
-const solution = new Solution();
+const longestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit = new LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit();
 const nums = [8, 2, 4, 7];
 const limit = 4;
-const result = solution.longestSubarray(nums, limit);
+const result = longestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.longestSubarray(nums, limit);
 console.log(result);  // Output: 2
